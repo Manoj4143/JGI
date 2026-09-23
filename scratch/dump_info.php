@@ -1,0 +1,1 @@
+<?php require_once __DIR__ . '/../includes/DBConnection.php';  = mysqli_query(, 'SELECT DISTINCT group_name FROM sched ORDER BY group_name ASC'); while( = mysqli_fetch_assoc()) { echo ['group_name'] . PHP_EOL; }  

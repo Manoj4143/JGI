@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="100%" height="100%">
+  <!-- Definition / Fonts -->
+  <defs>
+    <style>
+      .jgi-circle { fill: #0b132b; }
+      .jgi-dot { fill: #f59e0b; }
+      .jgi-white-text { fill: #ffffff; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif; font-weight: 800; }
+      .brand-main { fill: #111827; font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif; font-weight: 900; letter-spacing: -0.5px; }
+      .brand-sub { fill: #1f2937; font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 800; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Left Emblem: JGi Dark Circle Badge -->
+  <circle cx="75" cy="90" r="58" class="jgi-circle" />
+  
+  <!-- JGi Monogram Inside Circle -->
+  <text x="35" y="105" class="jgi-white-text" font-size="46" letter-spacing="-1">JG</text>
+  <text x="100" y="105" class="jgi-white-text" font-size="44">i</text>
+  <!-- Yellow dot over i -->
+  <circle cx="106" cy="72" r="6" class="jgi-dot" />
+
+  <!-- Right Typography: JAIN Wordmark -->
+  <text x="156" y="112" class="brand-main" font-size="78">JAIN</text>
+  
+  <!-- Underline Accent Bar under 'J' -->
+  <rect x="156" y="128" width="34" height="7" rx="1.5" fill="#111827" />
+
+  <!-- Sub-headline: INSTITUTE OF TECHNOLOGY -->
+  <text x="200" y="135" class="brand-sub" font-size="13">INSTITUTE OF TECHNOLOGY</text>
+</svg>

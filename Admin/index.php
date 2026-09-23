@@ -1,3 +1,10 @@
+<?php
+ob_start();
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+error_reporting(error_reporting() & ~E_NOTICE);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -708,10 +715,11 @@
 </style>
 </head>
 <?php 
-// Suppress notice level outputs
-error_reporting(error_reporting() & ~E_NOTICE);
-if (session_status() !== PHP_SESSION_ACTIVE) session_start();
-require("../includes/dbconnection.php");
+if (file_exists(__DIR__ . '/../includes/DBConnection.php')) {
+    require_once __DIR__ . '/../includes/DBConnection.php';
+} else {
+    require_once __DIR__ . '/../includes/dbconnection.php';
+}
 
 $error = '';
 $selectedRole = $_POST['role_type'] ?? ($_GET['role'] ?? 'admin');
